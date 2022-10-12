@@ -34,59 +34,252 @@
 
 </head>
 <body>
-      <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="../assets/img/logoblanco.png" alt="logovici"> 
-        
+        <img class="col-12" src="../assets/img/logonegro.png" alt="logovici"> 
       </a>
+
+      <div>
+        <div class="dropdown dropCity">
+          <button class="btn-ddwn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tres Arroyos
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ciudad 2</a></li>
+            <li><a class="dropdown-item" href="#">Ciudad 3</a></li>
+            <li><a class="dropdown-item" href="#">Ciudad 4</a></li>
+          </ul>
+        </div>
+      </div>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
+        
         <ul>
-          <li><a href="https://l1b3bjh5odp.typeform.com/to/uA7vKuca" class="active">Registra tu negocio</a></li>
-          <li><a href="https://7qvi3clb2wy.typeform.com/to/dhyCIWvl">Riders</a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=5492215737330&text=Hola%20VICI!%20Necesito%20ayuda...">Contacto</a></li>
+          <li><a href="https://l1b3bjh5odp.typeform.com/to/uA7vKuca" class="itemMenu">Registra tu negocio</a></li>
+          <li><a href="https://7qvi3clb2wy.typeform.com/to/dhyCIWvl" class="itemMenu">Riders</a></li>
+          <!-- <li><a href="https://api.whatsapp.com/send?phone=5492215737330&text=Hola%20VICI!%20Necesito%20ayuda...">Contacto</a></li> -->
+          <li><a href="https://api.whatsapp.com/send?phone=5492215737330&text=Hola%20VICI!%20Necesito%20ayuda..." class="itemMenu">Ingresar</a></li>
           <li>
-          <div class="container">
-          <a href="#exampleModalToggle"  class="btn btn-primary" data-bs-toggle="modal" role="button" style="padding: 10px 5px 10px 5px;"> <span class="textobotonhd">Creá tu cuenta! </span></a>
-          </div></li>
-          
+            <div class="container">
+                <a href="#exampleModalToggle"  class="btn btn-primary btnHeader" data-bs-toggle="modal" role="button" style="padding: 10px 5px 10px 5px;"> <span class="textobotonhd">Creá tu cuenta! </span></a>
+            </div>
           </li>
-          </div>
-        </div> 
+          </li>
         </ul>
+    </div>
       </nav><!-- .navbar -->
-
     </div>
   </header>
+  <!-- End Header -->   
+  <!-- Sub-header -->
+  <div class="sub-header-elegido d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center col-md-8">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="../assets/img/bike 1.png" alt="Icono moto delivery">
+                <p class="parrafoElegido">Tiempo estimado: 40 - 60 min.</p>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <img src="../assets/img/time 1.png" alt="Icono moto delivery">
+                <p class="parrafoElegido">Abierto: 19:00 - 23:00hs.</p>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <img src="../assets/img/smiling-face 1.png" alt="Icono moto delivery">
+                <p class="parrafoElegido">4,2 <span class="rate">de 5</span></p>
+            </div>
+        </div>
+    </div>
+  </div>  
     <!-- End Header -->
     
     <!-- Main Start -->
 
   <main>
     <section class="container-xl sectionChanguito">
-        <div class="d-flex row col-md-6 ">
+        
+        <div class="d-flex col-md-12 justify-content-between">
+          <!-- Izquierda -->
+          <div class="d-flex row col-md-6 ">
+            <!-- Primer Panel -->
             <div class="cardTuPedido">
-                <div class="d-flex ">
-                    <h2 class="col-10">Tu Pedido</h2>
+                <div class="d-flex contenedorTituloChanguito">
+                    <h2 class="col-10 bolder">Tu Pedido</h2>
                     <p class="col-2 text-end">X</p>
                 </div>
                 <div class="d-flex">
                     <div class="col-md-8">
-                        <h5>Hamburguesa de Campo</h5>
-                        <h6>$399</h6>
-                    </div>
+                        <h5 class="bolder">Hamburguesa de Campo</h5>
+                        <h6 class="precioModalProducto">$399</h6>
+                        <div class="d-flex col-3 justify-content-between btnChanguitoCantidad align-items-center bolder p-2">
+                          <p type="button" class="btnChanguitoCantidadParrafo">-</p>
+                          <p class="btnChanguitoCantidadParrafo">1</p>
+                          <p type="button" class="btnChanguitoCantidadParrafo">+</p>
+                        </div>
+                    </div>                  
                     <div class="col-md-4">
                         <img src="../assets/img/banner380 1.svg" class="img-fluid" alt="">
                     </div>
                 </div>  
             </div>
+            <!-- Segundo Panel -->
+            <div class="cardTuPedido mt-5">
+              <div class="d-flex contenedorTituloChanguito">
+                  <h2 class="col-10 bolder">Forma de Entrega</h2>
+                  <p class="col-2 text-end">X</p>
+              </div>
+              <div class="d-flex justify-content-between">  
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Retiro en el local
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Delivery
+                    </label>
+                  </div>
+                </div> 
+                <div>
+                  <p>$0</p>
+                  <p>$150</p>
+                </div>  
+              </div> 
+              <div class="contenedorTituloChanguito">
+                <h6 class="col-10 bolder">Dirección Elegida</h6>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="m-0">Aguero 2260, Buenos Aires, Argentina</p>
+                    <p>Depto. 3A</p>
+                  </div>
+                  <div>
+                    <p class="cambiarDireccion">Cambiar Dirección</p>
+                  </div>
+                </div>
+              </div>         
+            </div>
+            <!-- Tercer Panel -->
+
+            <div class="cardTuPedido mt-5">
+                <div class="d-flex contenedorTituloChanguito">
+                    <h2 class="col-10 bolder">Método de Pago</h2>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Efectivo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Tarjeta de Crédito / Débito
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Mercadopago
+                  </label>
+                </div>
+            </div>
+          </div>
+
+
+          <!-- Derecha -->
+          <div class="d-flex row col-md-5 ">
+            <!-- Primer Panel -->
+            <div class="cardTuPedido">
+                <div class="d-flex contenedorTituloChanguito">
+                    <h2 class="col-10 bolder">Resumen</h2>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h5 class="bolder">Hamburguesa de Campo</h5>
+                  <h6 class="precioModalProducto text-end">$399</h6>
+                </div>  
+            </div>
+            <!-- Segundo Panel -->
+            <div class="cardTuPedido mt-5">
+              <div class="d-flex contenedorTituloChanguito">
+                  <h2 class="col-10 bolder">Forma de Entrega</h2>
+                  <p class="col-2 text-end">X</p>
+              </div>
+              <div class="d-flex justify-content-between">  
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Retiro en el local
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Delivery
+                    </label>
+                  </div>
+                </div> 
+                <div>
+                  <p>$0</p>
+                  <p>$150</p>
+                </div>  
+              </div> 
+              <div class="contenedorTituloChanguito">
+                <h6 class="col-10 bolder">Dirección Elegida</h6>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="m-0">Aguero 2260, Buenos Aires, Argentina</p>
+                    <p>Depto. 3A</p>
+                  </div>
+                  <div>
+                    <p class="cambiarDireccion">Cambiar Dirección</p>
+                  </div>
+                </div>
+              </div>         
+            </div>
+            <!-- Tercer Panel -->
+
+            <div class="cardTuPedido mt-5">
+                <div class="d-flex contenedorTituloChanguito">
+                    <h2 class="col-10 bolder">Método de Pago</h2>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Efectivo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Tarjeta de Crédito / Débito
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Mercadopago
+                  </label>
+                </div>
+            </div>
+          </div>
+
+
+
+
+
         </div>
+
+        
     </section>
   </main>
 

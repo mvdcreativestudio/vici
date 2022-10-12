@@ -698,6 +698,12 @@ color: rgb(0, 0, 0);
   margin-bottom: 0;
 }
 
+@media (max-width: 700px) {
+  .tituloComercios {
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
